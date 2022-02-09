@@ -1,7 +1,7 @@
-#include "stack.h"
+#include "Queue.h"
 
 int main() {
-    Stack s;
-    s.interface();
+    Queue q;
+    q.interface();
     return 0;
 }
