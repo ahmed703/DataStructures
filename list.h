@@ -1,50 +1,35 @@
-#ifndef INC_3_LISTUSINGLINKEDBASED_LIST_H
-#define INC_3_LISTUSINGLINKEDBASED_LIST_H
+#ifndef INC_3_LISTUSINGARRAYBASED_LIST_H
+#define INC_3_LISTUSINGARRAYBASED_LIST_H
 
-#include <iostream>
-#include <cstring>
+#include <bits/stdc++.h>
+#define MAXSIZE 10
 
 using namespace std;
-
 using EntryType = int;
 
 class List {
-
-private:
-
-    struct ListNode {
-
-        EntryType entry;
-
-        ListNode *next;
-
-    };
-
+    EntryType entry[MAXSIZE]{};
     int size;
-
-    ListNode *head{};
 
 public:
 
     List();
 
+    bool ListEmpty() const;
+
+    bool ListFull() const;
+
     void Insert();
 
     void Delete();
 
-    void CheckSize() const;
-
     void printList();
+
+    void CheckSize() const;
 
     void ClearList();
 
     void interface();
-
-private:
-
-    bool ListEmpty() const;
-
-    __attribute__((unused)) static bool ListFull();
 };
 
-#endif //INC_3_LISTUSINGLINKEDBASED_LIST_H
+#endif //INC_3_LISTUSINGARRAYBASED_LIST_H
