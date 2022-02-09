@@ -1,2 +1,5 @@
-# List
-A list is a linear data structure in which an element can be added, removed or accessed from any position given.
+# Binary Search Tree (BST)
+A binary search tree, also known as ordered binary search tree, is a variation of rooted binary tree in which the nodes are arranged in an order.The nodes of the tree store a key (and optionally, an associated value), and each has two distinguished sub-trees, commonly denoted left and right. The tree additionally satisfies the binary search property: the key in each node is greater than or equal to any key stored in the left sub-tree, and less than or equal to any key stored in the right sub-tree. 
+
+BST requires an order relation by which every node of the tree is comparable with every other node in the sense of total order. Binary search trees are also efficacious in sorting algorithms and search algorithms. However, the search complexity of a BST depends upon the order in which the nodes are inserted and deleted; since in worst case, successive operations in the binary search tree may lead to degeneracy and form a singly linked list (or "unbalanced tree") like structure, thus has the same worst-case complexity as a linked list.
+Binary search trees are also a fundamental data structure used in construction of abstract data structures such as sets, multisets, and associative arrays.
